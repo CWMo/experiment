@@ -1,0 +1,168 @@
+/* Contrology Studio color palete and font family*/
+@font-face { 
+    font-family: 'Glacial-Indifference'; 
+    src: url('GlacialIndifference-Regular.otf'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face { 
+    font-family: 'Glacial-Indifference'; 
+    src: url('glacial-indifference.bold.otf'); 
+    font-weight: bold;
+    font-style: normal;
+} 
+
+@font-face { 
+    font-family: 'Kingred-Modern'; 
+    src: url('kingred.otf'); 
+} 
+
+:root {
+    --primary-bgcolor: #F6EFEB;
+    --secondary-bgcolor: #EED7C1;
+    --light-bgcolor: #F7F6F6;
+    --dark-color: #2D3640;
+    --dark-color2: #474132;
+    --dark-color3: #262728;
+    --dark-color4: #2b2723;
+    --system-font: "Glacial-Indifference", sans-serif;
+    --title-font: "Sorts Mill Goudy", serif;
+    --emphasis-font: "Kingred-Modern", cursive;
+}
+
+body {
+    font-family: var(--system-font);
+    background-color: var(--primary-bgcolor);
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--title-font);
+    font-weight: 100;    
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+button {
+    color: var(--dark-color);
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#home-logo {
+    display: block;
+    margin: auto;
+    height: 120px;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 120px;
+}
+
+nav a {
+    color: white;
+    padding: 5px;
+    line-height: 1;
+}
+
+nav .dropdown a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-item {
+    display: none;
+}
+
+.dropdown-item a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-item {
+    display: block;
+    position: absolute;
+}
+
+#menu-sect {
+    pointer-events: all;
+}
+
+#page-header {
+    height: 200px;
+}
+
+#page-header h1 {
+    padding: 5% 0 0 5%;
+    font-family: var(--emphasis-font);
+    color: var(--light-bgcolor);
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--dark-color); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1rem; /* Some padding */
+    font-size: 2rem; /* Increase font size */
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.2;
+}
+
+#topBtn:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: var(--dark-color);
+}
+.copyright-area {
+    padding: 15px 30px;
+}
+
+.copyright-area {
+    font-size: 1rem;
+    font-family: var(--system-font);
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+

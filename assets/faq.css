@@ -1,0 +1,59 @@
+main {
+    line-height: 1.2;
+}
+
+section {
+    padding: 5%;
+}
+
+#faq {
+    background-color: var(--light-bgcolor);
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: var(--system-font);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: var(--system-font);
+    margin-top: 0;
+}
+
+#faq p {
+    display: none;
+}
+
+#faq p.show {
+    display: block;
+}
+
+.emphasize {
+    font-weight: 800;
+}
+
+#policy {
+    text-align: left;
+    background-color: var(--primary-bgcolor);
+    color: var(--dark-color3);
+}
+
+@media (pointer: coarse) {
+    /* when hover is not supported */
+    h3 {
+      text-decoration: underline;
+    }
+  }

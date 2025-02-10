@@ -1,0 +1,21 @@
+section {
+    padding: 5%;
+    justify-content: space-between;
+    column-gap: 5%;
+}
+
+main {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#contact-info {
+    color: var(--dark-color4);
+}
+
+.flex-row div {
+    flex: 1 1 30%;
+}
